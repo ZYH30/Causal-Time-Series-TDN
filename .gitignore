@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.log
+
+# Fresh experiment outputs are intentionally untracked.
+results/from_scratch/*
+!results/from_scratch/.gitkeep
+results/reproduce_published/*
+!results/reproduce_published/.gitkeep
+
+# Baseline library writes temporary checkpoints/results during fresh training.
+baseline/checkpoints/
+baseline/test_results/
+baseline/results/
+
+# Published checkpoints under published/ are intentionally tracked.

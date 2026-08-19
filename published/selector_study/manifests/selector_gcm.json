@@ -1,0 +1,90 @@
+{
+  "schema_version": "tdn-selector-1.0",
+  "data": "dataset/weather/weather.csv",
+  "target": "OT",
+  "train_ratio": 0.7,
+  "cardinality": 10,
+  "candidate_lags": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    12,
+    24,
+    48,
+    95
+  ],
+  "screening_horizon": 96,
+  "downstream_input": "full_observed_history_of_selected_variables",
+  "data_quality": {
+    "known_missing_sentinel": -9999.0,
+    "selector_preprocessing": "strictly_backward_forward_fill_within_training_partition"
+  },
+  "selector": "gcm",
+  "selected_features": [
+    "Tlog_degC",
+    "H2OC_m",
+    "VPdef_mbar",
+    "rho_g",
+    "PAR_ol",
+    "Tdew_degC",
+    "p_mbar",
+    "max_PAR",
+    "raining_s",
+    "wv_m"
+  ],
+  "source_manifest": "results/journal_weather/weather_gcm_manifest.json",
+  "selected_evidence": [
+    {
+      "feature": "Tlog_degC",
+      "lag": 2,
+      "q_value": 0.0001447742081117871
+    },
+    {
+      "feature": "H2OC_m",
+      "lag": 48,
+      "q_value": 0.01127706692720287
+    },
+    {
+      "feature": "VPdef_mbar",
+      "lag": 95,
+      "q_value": 0.001669075474849572
+    },
+    {
+      "feature": "rho_g",
+      "lag": 0,
+      "q_value": 0.0468567555172075
+    },
+    {
+      "feature": "PAR_ol",
+      "lag": 95,
+      "q_value": 0.022249702877324095
+    },
+    {
+      "feature": "Tdew_degC",
+      "lag": 0,
+      "q_value": 0.01945539981246634
+    },
+    {
+      "feature": "p_mbar",
+      "lag": 0,
+      "q_value": 0.022638200638945786
+    },
+    {
+      "feature": "max_PAR",
+      "lag": 95,
+      "q_value": 0.001669075474849572
+    },
+    {
+      "feature": "raining_s",
+      "lag": 95,
+      "q_value": 0.01127706692720287
+    },
+    {
+      "feature": "wv_m",
+      "lag": 95,
+      "q_value": 0.007484099128303412
+    }
+  ]
+}

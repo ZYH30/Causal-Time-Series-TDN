@@ -1,0 +1,475 @@
+{
+  "weather_csv": "dataset/weather.csv",
+  "weather_csv_sha256": "f365909fa07b621e61a9a1293dc69ae803d3a865905066b481e7dcc6819932d7",
+  "all_detected_weather_csv_hashes": {
+    "dataset/weather.csv": "f365909fa07b621e61a9a1293dc69ae803d3a865905066b481e7dcc6819932d7",
+    "dataset/weather.csv": "f365909fa07b621e61a9a1293dc69ae803d3a865905066b481e7dcc6819932d7",
+    "dataset/weather.csv": "f365909fa07b621e61a9a1293dc69ae803d3a865905066b481e7dcc6819932d7"
+  },
+  "target_scaler": {
+    "target": "OT",
+    "n_rows": 52696,
+    "n_train": 36887,
+    "mean": 411.0543416379755,
+    "scale": 383.95709796587886,
+    "variance": 147423.05307837948
+  },
+  "projects": {
+    "baseline": "canonical-source:v1.4.1-baselines",
+    "stability": "canonical-source:v1.5-stability",
+    "selector": "canonical-source:v1.5.1-h96-selector"
+  },
+  "counts": {
+    "baseline_per_seed": 126,
+    "final_tdn_per_seed": 9,
+    "selector_per_seed": 15
+  },
+  "final_contract": {
+    "H96": "V1.5.1 GCM + ar_b48_m050",
+    "H192": "V1.5 ar_b48_m050",
+    "H720": "V1.5 ar_b48_m050"
+  },
+  "tdn_inverse_metric_cross_checks": [
+    {
+      "tag": "ar_b48_m050_H192_s20260810",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H192_seed20260810_ar_b48_m050_H192_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 204.80650329589844,
+          "analytic_rescale": 204.806435905532,
+          "relative_difference": 3.2904407504018165e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.96446704864502,
+          "analytic_rescale": 10.964468580552715,
+          "relative_difference": 1.397156355141148e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 14.311062270002825,
+          "analytic_rescale": 14.311059915517509,
+          "relative_difference": 1.645220509579162e-07
+        }
+      }
+    },
+    {
+      "tag": "ar_b48_m050_H192_s20260811",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H192_seed20260811_ar_b48_m050_H192_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 181.49220275878906,
+          "analytic_rescale": 181.4922378750778,
+          "relative_difference": 1.934864495560549e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.02124309539795,
+          "analytic_rescale": 10.021248929919695,
+          "relative_difference": 5.822150299370736e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.471904199436286,
+          "analytic_rescale": 13.471905502751932,
+          "relative_difference": 9.67432294832063e-08
+        }
+      }
+    },
+    {
+      "tag": "ar_b48_m050_H192_s20260812",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H192_seed20260812_ar_b48_m050_H192_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 197.8539581298828,
+          "analytic_rescale": 197.85407310845028,
+          "relative_difference": 5.811281297402562e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.709628105163574,
+          "analytic_rescale": 10.709632839163564,
+          "relative_difference": 4.4203195957612323e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 14.066056950328433,
+          "analytic_rescale": 14.066061037420898,
+          "relative_difference": 2.905641070717302e-07
+        }
+      }
+    },
+    {
+      "tag": "ar_b48_m050_H720_s20260810",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H720_seed20260810_ar_b48_m050_H720_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 293.9171142578125,
+          "analytic_rescale": 293.91695312177717,
+          "relative_difference": 5.482363139613345e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 12.838150024414062,
+          "analytic_rescale": 12.83815272096135,
+          "relative_difference": 2.1004168950888962e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 17.14401103178053,
+          "analytic_rescale": 17.14400633229518,
+          "relative_difference": 2.741181943778147e-07
+        }
+      }
+    },
+    {
+      "tag": "ar_b48_m050_H720_s20260811",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H720_seed20260811_ar_b48_m050_H720_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 304.4894104003906,
+          "analytic_rescale": 304.4894118022365,
+          "relative_difference": 4.603923143899425e-09
+        },
+        "mae_raw": {
+          "direct_inverse": 12.947389602661133,
+          "analytic_rescale": 12.947394398037147,
+          "relative_difference": 3.703738271251076e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 17.449624935808522,
+          "analytic_rescale": 17.44962497597689,
+          "relative_difference": 2.301961587492767e-09
+        }
+      }
+    },
+    {
+      "tag": "ar_b48_m050_H720_s20260812",
+      "path": "canonical-source:v1.5-stability/results/journal_weather/v15_stability_study/runs/gcm_L336_H720_seed20260812_ar_b48_m050_H720_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 286.6034240722656,
+          "analytic_rescale": 286.6032552148329,
+          "relative_difference": 5.891675343526292e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 12.349539756774902,
+          "analytic_rescale": 12.349548887666504,
+          "relative_difference": 7.393704567659376e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 16.92936573154073,
+          "analytic_rescale": 16.929360744423665,
+          "relative_difference": 2.945838104665956e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_gcm_ar_b48_m050_s20260810",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/gcm_L336_H96_seed20260810_v151_h96_gcm_ar_b48_m050_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 179.8677978515625,
+          "analytic_rescale": 179.86775732558945,
+          "relative_difference": 2.2530977491553554e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.229646682739258,
+          "analytic_rescale": 10.229641868341703,
+          "relative_difference": 4.70631851100136e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.411480076843215,
+          "analytic_rescale": 13.411478565974353,
+          "relative_difference": 1.1265489373668273e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_gcm_ar_b48_m050_s20260811",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/gcm_L336_H96_seed20260811_v151_h96_gcm_ar_b48_m050_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 200.37942504882812,
+          "analytic_rescale": 200.37936857417608,
+          "relative_difference": 2.8183857712586604e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.328447341918945,
+          "analytic_rescale": 10.328446269412288,
+          "relative_difference": 1.0384006639156439e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 14.15554396866571,
+          "analytic_rescale": 14.155541973876382,
+          "relative_difference": 1.4091929860929548e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_gcm_ar_b48_m050_s20260812",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/gcm_L336_H96_seed20260812_v151_h96_gcm_ar_b48_m050_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 165.32810974121094,
+          "analytic_rescale": 165.3281638495967,
+          "relative_difference": 3.272786953442648e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 9.661022186279297,
+          "analytic_rescale": 9.661022733277967,
+          "relative_difference": 5.661912671777697e-08
+        },
+        "rmse_raw": {
+          "direct_inverse": 12.857997890076469,
+          "analytic_rescale": 12.857999994151372,
+          "relative_difference": 1.6363936106693756e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_correlation_ar_b48_m050_s20260810",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/correlation_L336_H96_seed20260810_v151_h96_correlation_ar_b48_m050_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 161.0305633544922,
+          "analytic_rescale": 161.0305346011981,
+          "relative_difference": 1.7855799228314146e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 9.38044548034668,
+          "analytic_rescale": 9.380444953206371,
+          "relative_difference": 5.6195658233647804e-08
+        },
+        "rmse_raw": {
+          "direct_inverse": 12.689781848183687,
+          "analytic_rescale": 12.68978071525265,
+          "relative_difference": 8.92790001948308e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_correlation_ar_b48_m050_s20260811",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/correlation_L336_H96_seed20260811_v151_h96_correlation_ar_b48_m050_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 168.46177673339844,
+          "analytic_rescale": 168.4617599533945,
+          "relative_difference": 9.960718839313829e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 9.788352966308594,
+          "analytic_rescale": 9.78835621322507,
+          "relative_difference": 3.31712128717036e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 12.979282597023552,
+          "analytic_rescale": 12.979281950608613,
+          "relative_difference": 4.98035954238278e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_correlation_ar_b48_m050_s20260812",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/correlation_L336_H96_seed20260812_v151_h96_correlation_ar_b48_m050_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 3119.015625,
+          "analytic_rescale": 3119.0166594561542,
+          "relative_difference": 3.316609903616462e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.8991117477417,
+          "analytic_rescale": 10.89911509839345,
+          "relative_difference": 3.0742420099920906e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 55.84814791020379,
+          "analytic_rescale": 55.848157171532115,
+          "relative_difference": 1.6583050886463076e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_mutual_information_ar_b48_m050_s20260810",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/mutual_information_L336_H96_seed20260810_v151_h96_mutual_information_ar_b48_m050_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 878979.6875,
+          "analytic_rescale": 878979.6701228421,
+          "relative_difference": 1.976969226427328e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 125.59362030029297,
+          "analytic_rescale": 125.59359447610886,
+          "relative_difference": 2.0561700542540798e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 937.5391658485527,
+          "analytic_rescale": 937.5391565811221,
+          "relative_difference": 9.884846271443806e-09
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_mutual_information_ar_b48_m050_s20260811",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/mutual_information_L336_H96_seed20260811_v151_h96_mutual_information_ar_b48_m050_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 157.7494659423828,
+          "analytic_rescale": 157.74946283486358,
+          "relative_difference": 1.9699079267062773e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 9.290647506713867,
+          "analytic_rescale": 9.290646046137269,
+          "relative_difference": 1.572093438350595e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 12.559835426564426,
+          "analytic_rescale": 12.55983530285583,
+          "relative_difference": 9.849539517527543e-09
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_mutual_information_ar_b48_m050_s20260812",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/mutual_information_L336_H96_seed20260812_v151_h96_mutual_information_ar_b48_m050_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 187.87289428710938,
+          "analytic_rescale": 187.87294154921798,
+          "relative_difference": 2.5156421259612865e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.590160369873047,
+          "analytic_rescale": 10.59016057189628,
+          "relative_difference": 1.9076503356669265e-08
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.706673348668865,
+          "analytic_rescale": 13.706675072723435,
+          "relative_difference": 1.257821142670014e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_00_ar_b48_m050_s20260810",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_00_L336_H96_seed20260810_v151_h96_random_00_ar_b48_m050_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 9850.826171875,
+          "analytic_rescale": 9850.825338382081,
+          "relative_difference": 8.461147363255122e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 12.214958190917969,
+          "analytic_rescale": 12.214957088260931,
+          "relative_difference": 9.027104476681181e-08
+        },
+        "rmse_raw": {
+          "direct_inverse": 99.25132831289967,
+          "analytic_rescale": 99.25132411399902,
+          "relative_difference": 4.230573762691443e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_00_ar_b48_m050_s20260811",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_00_L336_H96_seed20260811_v151_h96_random_00_ar_b48_m050_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 187.28700256347656,
+          "analytic_rescale": 187.28696906626766,
+          "relative_difference": 1.7885495760551492e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.116694450378418,
+          "analytic_rescale": 10.116700586717808,
+          "relative_difference": 6.065554019114672e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.68528416085967,
+          "analytic_rescale": 13.685282937019156,
+          "relative_difference": 8.942748276108022e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_00_ar_b48_m050_s20260812",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_00_L336_H96_seed20260812_v151_h96_random_00_ar_b48_m050_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 195034.96875,
+          "analytic_rescale": 195034.96328584506,
+          "relative_difference": 2.8016283289750174e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 19.5424861907959,
+          "analytic_rescale": 19.542489832822525,
+          "relative_difference": 1.8636451435332653e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 441.6276358540077,
+          "analytic_rescale": 441.6276296676251,
+          "relative_difference": 1.4008141840110311e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_01_ar_b48_m050_s20260810",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_01_L336_H96_seed20260810_v151_h96_random_01_ar_b48_m050_s20260810/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 171.24400329589844,
+          "analytic_rescale": 171.24399224488985,
+          "relative_difference": 6.453369678339774e-08
+        },
+        "mae_raw": {
+          "direct_inverse": 9.898043632507324,
+          "analytic_rescale": 9.898041299313011,
+          "relative_difference": 2.357227751195174e-07
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.086023204010393,
+          "analytic_rescale": 13.086022781765658,
+          "relative_difference": 3.226684903379115e-08
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_01_ar_b48_m050_s20260811",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_01_L336_H96_seed20260811_v151_h96_random_01_ar_b48_m050_s20260811/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 210601.578125,
+          "analytic_rescale": 210601.64256114117,
+          "relative_difference": 3.0596219661483305e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 61.70558166503906,
+          "analytic_rescale": 61.70558196268422,
+          "relative_difference": 4.823634245571293e-09
+        },
+        "rmse_raw": {
+          "direct_inverse": 458.913475641106,
+          "analytic_rescale": 458.9135458462097,
+          "relative_difference": 1.5298111006689055e-07
+        }
+      }
+    },
+    {
+      "tag": "v151_h96_random_01_ar_b48_m050_s20260812",
+      "path": "canonical-source:v1.5.1-h96-selector/results/journal_weather/v15_unified_h96_selector/runs/random_01_L336_H96_seed20260812_v151_h96_random_01_ar_b48_m050_s20260812/metrics.json",
+      "checks": {
+        "mse_raw": {
+          "direct_inverse": 178.06011962890625,
+          "analytic_rescale": 178.0602236611684,
+          "relative_difference": 5.842532375769647e-07
+        },
+        "mae_raw": {
+          "direct_inverse": 10.14590072631836,
+          "analytic_rescale": 10.145900500519152,
+          "relative_difference": 2.225521547850152e-08
+        },
+        "rmse_raw": {
+          "direct_inverse": 13.34391695226354,
+          "analytic_rescale": 13.343920850378588,
+          "relative_difference": 2.9212666143908094e-07
+        }
+      }
+    }
+  ]
+}

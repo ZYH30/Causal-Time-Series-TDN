@@ -1,0 +1,4 @@
+Python 3.12.7
+PyTorch 2.6.0+cu124
+CUDA 12.4
+NVIDIA A800 80GB PCIe

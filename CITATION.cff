@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying TDN manuscript."
+title: "TDN: Causal Driver Discovery and De-confounded Forecasting for Dynamic Temporal Data Pipelines"
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Yonghe
+  - family-names: Ma
+    given-names: Chao
+  - family-names: Li
+    given-names: Jiawei
+  - family-names: Cui
+    given-names: Yangyang
+  - family-names: Wang
+    given-names: Yuezhu
+  - family-names: Sun
+    given-names: Huiyan
+repository-code: "https://github.com/ZYH30/Causal-Time-Series-TDN"
+date-released: 2026-08-19
