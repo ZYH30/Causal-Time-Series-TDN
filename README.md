@@ -484,14 +484,6 @@ bash scripts/train_from_scratch.sh
 
 If this repository is useful for your research, please cite the corresponding paper.
 
-```bibtex
-@inproceedings{TDN2026,
-  title     = {Temporal Driver Networks for Causal-Aware Time-Series Forecasting},
-  author    = {Zhao, Yonghe et al.},
-  year      = {2026}
-}
-```
-
 ---
 
 ## License
