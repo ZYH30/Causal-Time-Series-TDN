@@ -1,6 +1,6 @@
-# Causal Time-Series Forecasting with Temporal Driver Networks (TDN)
+# Causal Time-Series Forecasting with Temporal Decouple Network (TDN)
 
-This repository provides the official implementation and reproducibility package for the Temporal Driver Network (TDN) framework used in our time-series forecasting experiments.
+This repository provides the official implementation and reproducibility package for the Temporal Decouple Network (TDN) framework used in our time-series forecasting experiments.
 
 The released code includes temporal causal-driver discovery, TDN forecasting, baseline comparisons, controlled driver-selection experiments, and the frozen model checkpoints corresponding to the reported Weather benchmark results.
 
